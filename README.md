@@ -15,11 +15,17 @@ then do some changes in setting.py and views.py
 - in setting.py
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 EMAIL_HOST = 'smtp.gmail.com'
+
 EMAIL_PORT = '587'
+
 EMAIL_HOST_USER = 'Your mail id'        # Change This 
+
 EMAIL_HOST_PASSWORD = 'your Password'   # Change This
+
 EMAIL_USE_TLS = True
+
 EMAIL_USE_SSL = False
 
 
