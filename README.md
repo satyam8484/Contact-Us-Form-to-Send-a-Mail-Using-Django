@@ -10,7 +10,31 @@ python3.6 >=
 pip install django
 
 # Run
-then do some changes in setting.py and views.py and run following command
+then do some changes in setting.py and views.py
+
+- in setting.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+### EMAIL_HOST_USER = 'Your mail id'
+### EMAIL_HOST_PASSWORD = 'your Password'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+
+- in Views.py
+
+send_mail(
+            'Thank you For Cotacting Us',  # Subject
+            msg,  # Message
+            'Your mail id',  ### From
+            [tomailadd],  # To
+            fail_silently=False,
+        )
+
+
+- run following command
 python manage.py runserver
 
 
