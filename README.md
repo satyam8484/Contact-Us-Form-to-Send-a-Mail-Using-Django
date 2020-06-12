@@ -17,8 +17,8 @@ then do some changes in setting.py and views.py
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
-### EMAIL_HOST_USER = 'Your mail id'
-### EMAIL_HOST_PASSWORD = 'your Password'
+EMAIL_HOST_USER = 'Your mail id'        # Change This 
+EMAIL_HOST_PASSWORD = 'your Password'   # Change This
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
@@ -28,11 +28,10 @@ EMAIL_USE_SSL = False
 send_mail(
             'Thank you For Cotacting Us',  # Subject
             msg,  # Message
-            'Your mail id',  ### From
-            [tomailadd],  # To
+            'Your mail id',  
+            [tomailadd],
             fail_silently=False,
-        )
-
+        ) # Change This
 
 - run following command
 python manage.py runserver
