@@ -32,7 +32,7 @@ EMAIL_USE_SSL = False
 - in Views.py
 
 send_mail(
-            'Thank you For Cotacting Us',  # Subject
+            'Thank you For Cotacting Us',
             msg,  # Message
             'Your mail id',  
             [tomailadd],
